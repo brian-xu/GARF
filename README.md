@@ -54,6 +54,30 @@
 ## News 🚀🚀🚀
 - `2025/01/29`: We release the [GARF](https://huggingface.co/collections/IPEC-COMMUNITY/foundation-vision-language-action-model-6795eb96a9c661f90236acbb), which achieves state-of-the-art performance across a diverse range of synthetic and real-world benchmarks. Try our [demo](https://garf-demo.pages.dev/) on your own data! 
 
+## 📖 Table of Contents
+
+- [📄 Document](#Document)
+- [🤗 Model Zoo](#data-preparation)
+- [✅ Evaluation Performance](#Performance)
+- [🙋 FAQs](#faq)
+- [Citation](#citation)
+- [License](#license)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!-- ```bibtex
