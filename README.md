@@ -140,7 +140,6 @@
 </table>
 
 
-## 😺 Model Zoo
 
 ## ✅ Evaluation Performance
 
