@@ -51,7 +51,7 @@
 </p>
 
 
-## News 🚀🚀🚀
+## 🔊 News 
 - `2025/03/25`: We release the [GARF](https://huggingface.co/collections/IPEC-COMMUNITY/foundation-vision-language-action-model-6795eb96a9c661f90236acbb), which achieves state-of-the-art performance across a diverse range of synthetic and real-world benchmarks. Try our [demo](https://garf-demo.pages.dev/) on your own data! 
 
 ## 📖 Table of Contents
@@ -93,27 +93,45 @@
   </tr>
   <tr>
     <td>GARF-mini</td>
-    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">spatialvla-4b-224-pt</a></td>
-    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-fractal">spatialvla-4b-224-sft-fractal</a></td>
-    <td>fine-tuning on the fractal dataset, testing on simple-env google-robot, TABLE II ine-tuning</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">PTv3-E</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-fractal">GARF-mini-E-FM</a></td>
+    <td>pretrained on everyday subset of Breaking Bad with Flow-matching model. </a></td>
   </tr>
   <tr>
     <td>GARF-mini-diffusion</td>
-    <td><a href="https://huggingface.co/google/paligemma2-3b-pt-224">google/paligemma2-3b-pt-224</a></td>
-    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">spatialvla-4b-224-pt</a></td>
-    <td>pretrained on openx and rh20t, TABLE I and II zero-shot, Fig.5 and 7</td>
+    <td><a href="https://huggingface.co/google/paligemma2-3b-pt-224">PTv3-E</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">GARF-mini-E-FM</a></td>
+    <td>replace the Flow-matching model with Diffusion model</td>
   </tr>
   <tr>
     <td>GARF</td>
-    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">spatialvla-4b-224-pt</a></td>
-    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-mix-224-pt">spatialvla-4b-mix-224-pt</a></td>
-    <td>fine-tuning on the fractal and bridge mixture dataset, Fig.5 and 7</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">PTv3-EAO</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-mix-224-pt">GARF-E-FM</a></td>
+    <td>large-scale pretrained on everyday+artifact+other subsets of Breaking Bad</a></td>
   </tr>
   <tr>
     <td>GARF-Pro</td>
-    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">spatialvla-4b-224-pt</a></td>
-    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-bridge">spatialvla-4b-224-sft-bridge</a></td>
-    <td>fine-tuning on the bridge dataset, testing on simple-env widowx-robot, TABLE I fine-tuning</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">PTv3-E</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-bridge">GARF-Pro-EAO-FM</a></td>
+    <td>train Flow-matching model with everyday+artifact+other subsets (cost most time!)</a></td>
+  </tr>
+  <tr>
+    <td>GARF-Pro-Eggshell</td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">PTv3-E</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-bridge">GARF-Pro-EAO-FM-Eggshell</a></td>
+    <td>fine-tuned on the eggshell subset of our Fractuna dataset</a></td>
+  </tr>
+  <tr>
+    <td>GARF-Pro-Bone</td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">PTv3-E</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-bridge">GARF-Pro-EAO-FM-Bone</a></td>
+    <td>fine-tuned on the bone subset of our Fractuna dataset</a></td>
+  </tr>
+  <tr>
+    <td>GARF-Pro-Lithics</td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">PTv3-E</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-bridge">GARF-Pro-EAO-FM-Lithics</a></td>
+    <td>fine-tuned on the lithics subset of our Fractuna dataset</a></td>
   </tr>
 </table>
 
