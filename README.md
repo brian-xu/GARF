@@ -68,6 +68,13 @@
 
 
 ### ⏩ **Installation**
+We recommend using [uv](https://docs.astral.sh/uv/) to manage the dependencies. Follow the instructions [here](https://docs.astral.sh/uv/installation) to install uv. Then, simply run
+```bash
+uv sync
+uv sync --extra post
+source ./venv/bin/activate
+```
+to install the dependencies and activate the virtual environment.
 
 ### 💾 **Data Preparation**
 

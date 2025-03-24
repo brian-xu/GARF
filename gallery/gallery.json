@@ -1,0 +1,354 @@
+{
+    "idList": [
+        "Fractura_Bowl_1",
+        "Fractura_Vase_2",
+        "Fractura_Pot_2",
+        "BreakingBad_BeerBottle_6da7fa9722b2a12d195232a03d04563a_mode_11",
+        "BreakingBad_Bottle_776502db6e2e680e5e4f0d37557f3953_mode_17",
+        "BreakingBad_Bowl_960c5c5bff2d3a4bbced73c51e99f8b2_mode_19",
+        "BreakingBad_Cookie_e1bc84ee7b9ef7f331999dc8823fe0d_mode_18",
+        "BreakingBad_Cup_3a3b19614d545834cd321262c762dc9_mode_19",
+        "BreakingBad_DrinkingBottle_7d41c6018862dc419d231837a704886d_mode_19",
+        "BreakingBad_Mirror_b5787ebfe1c5b31f68661782af60b711_mode_14",
+        "BreakingBad_artifact_75663_sf_mode_19",
+        "BreakingBad_artifact_81369_sf_mode_19",
+        "BreakingBad_artifact_91347_sf_mode_19",
+        "BreakingBad_artifact_127243_sf_mode_19",
+        "FantasticBreaks_01047",
+        "FantasticBreaks_17001",
+        "FantasticBreaks_19002"
+    ],
+    "entities": {
+        "Fractura_Bowl_1": {
+            "id": "Fractura_Bowl_1",
+            "dataset": "Fractura Real",
+            "subset": "ceramics",
+            "folder": "Fractura/bowl/1",
+            "files": [
+                "piece_0.ply",
+                "piece_1.ply",
+                "piece_2.ply"
+            ]
+        },
+        "Fractura_Vase_2": {
+            "id": "Fractura_Vase_2",
+            "dataset": "Fractura Real",
+            "subset": "ceramics",
+            "folder": "Fractura/vase/2",
+            "files": [
+                "piece_0.ply",
+                "piece_1.ply",
+                "piece_2.ply",
+                "piece_3.ply"
+            ]
+        },
+        "Fractura_Pot_2": {
+            "id": "Fractura_Pot_3",
+            "dataset": "Fractura Real",
+            "subset": "ceramics",
+            "folder": "Fractura/pot/2",
+            "files": [
+                "piece_0.ply",
+                "piece_1.ply",
+                "piece_2.ply",
+                "piece_3.ply",
+                "piece_4.ply"
+            ]
+        },
+        "BreakingBad_BeerBottle_6da7fa9722b2a12d195232a03d04563a_mode_11": {
+            "id": "BreakingBad_BeerBottle_6da7fa9722b2a12d195232a03d04563a_mode_11",
+            "dataset": "BreakingBad",
+            "subset": "everyday",
+            "folder": "BreakingBad/BeerBottle/6da7fa9722b2a12d195232a03d04563a/mode_11",
+            "files": [
+                "piece_0.obj",
+                "piece_1.obj",
+                "piece_2.obj",
+                "piece_3.obj",
+                "piece_4.obj",
+                "piece_5.obj",
+                "piece_6.obj",
+                "piece_7.obj",
+                "piece_8.obj",
+                "piece_9.obj",
+                "piece_10.obj",
+                "piece_11.obj",
+                "piece_12.obj",
+                "piece_13.obj",
+                "piece_14.obj",
+                "piece_15.obj",
+                "piece_16.obj",
+                "piece_17.obj",
+                "piece_18.obj",
+                "piece_19.obj"
+            ]
+        },
+        "BreakingBad_Bottle_776502db6e2e680e5e4f0d37557f3953_mode_17": {
+            "id": "BreakingBad_Bottle_776502db6e2e680e5e4f0d37557f3953_mode_17",
+            "dataset": "BreakingBad",
+            "subset": "everyday",
+            "folder": "BreakingBad/Bottle/776502db6e2e680e5e4f0d37557f3953/mode_17",
+            "files": [
+                "piece_0.obj",
+                "piece_1.obj",
+                "piece_2.obj",
+                "piece_3.obj",
+                "piece_4.obj",
+                "piece_5.obj",
+                "piece_6.obj",
+                "piece_7.obj",
+                "piece_8.obj",
+                "piece_9.obj",
+                "piece_10.obj",
+                "piece_11.obj"
+            ]
+        },
+        "BreakingBad_Bowl_960c5c5bff2d3a4bbced73c51e99f8b2_mode_19": {
+            "id": "BreakingBad_Bowl_960c5c5bff2d3a4bbced73c51e99f8b2_mode_19",
+            "dataset": "BreakingBad",
+            "subset": "everyday",
+            "folder": "BreakingBad/Bowl/960c5c5bff2d3a4bbced73c51e99f8b2/mode_19",
+            "files": [
+                "piece_0.obj",
+                "piece_1.obj",
+                "piece_2.obj",
+                "piece_3.obj",
+                "piece_4.obj",
+                "piece_5.obj",
+                "piece_6.obj",
+                "piece_7.obj",
+                "piece_8.obj",
+                "piece_9.obj",
+                "piece_10.obj",
+                "piece_11.obj",
+                "piece_12.obj",
+                "piece_13.obj",
+                "piece_14.obj",
+                "piece_15.obj",
+                "piece_16.obj",
+                "piece_17.obj",
+                "piece_18.obj",
+                "piece_19.obj"
+            ]
+        },
+        "BreakingBad_Cookie_e1bc84ee7b9ef7f331999dc8823fe0d_mode_18": {
+            "id": "BreakingBad_Cookie_e1bc84ee7b9ef7f331999dc8823fe0d_mode_18",
+            "dataset": "BreakingBad",
+            "subset": "everyday",
+            "folder": "BreakingBad/Cookie/e1bc84ee7b9ef7f331999dc8823fe0d/mode_18",
+            "files": [
+                "piece_0.obj",
+                "piece_1.obj",
+                "piece_2.obj",
+                "piece_3.obj",
+                "piece_4.obj",
+                "piece_5.obj",
+                "piece_6.obj",
+                "piece_7.obj",
+                "piece_8.obj",
+                "piece_9.obj",
+                "piece_10.obj",
+                "piece_11.obj",
+                "piece_12.obj",
+                "piece_13.obj",
+                "piece_14.obj",
+                "piece_15.obj",
+                "piece_16.obj",
+                "piece_17.obj",
+                "piece_18.obj",
+                "piece_19.obj"
+            ]
+        },
+        "BreakingBad_Cup_3a3b19614d545834cd321262c762dc9_mode_19": {
+            "id": "BreakingBad_Cup_3a3b19614d545834cd321262c762dc9_mode_19",
+            "dataset": "BreakingBad",
+            "subset": "everyday",
+            "folder": "BreakingBad/Cup/3a3b19614d545834cd321262c762dc9/mode_19",
+            "files": [
+                "piece_0.obj",
+                "piece_1.obj",
+                "piece_2.obj",
+                "piece_3.obj",
+                "piece_4.obj",
+                "piece_5.obj",
+                "piece_6.obj",
+                "piece_7.obj",
+                "piece_8.obj",
+                "piece_9.obj",
+                "piece_10.obj",
+                "piece_11.obj",
+                "piece_12.obj",
+                "piece_13.obj",
+                "piece_14.obj",
+                "piece_15.obj",
+                "piece_16.obj"
+            ]
+        },
+        "BreakingBad_DrinkingBottle_7d41c6018862dc419d231837a704886d_mode_19": {
+            "id": "BreakingBad_DrinkingBottle_7d41c6018862dc419d231837a704886d_mode_19",
+            "dataset": "BreakingBad",
+            "subset": "everyday",
+            "folder": "BreakingBad/DrinkingBottle/7d41c6018862dc419d231837a704886d/mode_19",
+            "files": [
+                "piece_0.obj",
+                "piece_1.obj",
+                "piece_2.obj",
+                "piece_3.obj",
+                "piece_4.obj",
+                "piece_5.obj",
+                "piece_6.obj",
+                "piece_7.obj",
+                "piece_8.obj",
+                "piece_9.obj",
+                "piece_10.obj",
+                "piece_11.obj",
+                "piece_12.obj"
+            ]
+        },
+        "BreakingBad_Mirror_b5787ebfe1c5b31f68661782af60b711_mode_14": {
+            "id": "BreakingBad_Mirror_b5787ebfe1c5b31f68661782af60b711_mode_14",
+            "dataset": "BreakingBad",
+            "subset": "everyday",
+            "folder": "BreakingBad/Mirror/b5787ebfe1c5b31f68661782af60b711/mode_14",
+            "files": [
+                "piece_0.obj",
+                "piece_1.obj",
+                "piece_2.obj",
+                "piece_3.obj",
+                "piece_4.obj",
+                "piece_5.obj",
+                "piece_6.obj",
+                "piece_7.obj",
+                "piece_8.obj",
+                "piece_9.obj",
+                "piece_10.obj",
+                "piece_11.obj",
+                "piece_12.obj",
+                "piece_13.obj",
+                "piece_14.obj",
+                "piece_15.obj",
+                "piece_16.obj",
+                "piece_17.obj"
+            ]
+        },
+        "BreakingBad_artifact_75663_sf_mode_19": {
+            "id": "BreakingBad_artifact_75663_sf_mode_19",
+            "dataset": "BreakingBad",
+            "subset": "artifact",
+            "folder": "BreakingBad/artifact/75663_sf/mode_19",
+            "files": [
+                "piece_0.obj",
+                "piece_1.obj",
+                "piece_2.obj",
+                "piece_3.obj",
+                "piece_4.obj",
+                "piece_5.obj",
+                "piece_6.obj",
+                "piece_7.obj",
+                "piece_8.obj",
+                "piece_9.obj",
+                "piece_10.obj"
+            ]
+        },
+        "BreakingBad_artifact_81369_sf_mode_19": {
+            "id": "BreakingBad_artifact_81369_sf_mode_19",
+            "dataset": "BreakingBad",
+            "subset": "artifact",
+            "folder": "BreakingBad/artifact/81369_sf/mode_19",
+            "files": [
+                "piece_0.obj",
+                "piece_1.obj",
+                "piece_2.obj",
+                "piece_3.obj",
+                "piece_4.obj",
+                "piece_5.obj",
+                "piece_6.obj",
+                "piece_7.obj",
+                "piece_8.obj",
+                "piece_9.obj",
+                "piece_10.obj",
+                "piece_11.obj",
+                "piece_12.obj",
+                "piece_13.obj",
+                "piece_14.obj",
+                "piece_15.obj",
+                "piece_16.obj"
+            ]
+        },
+        "BreakingBad_artifact_91347_sf_mode_19": {
+            "id": "BreakingBad_artifact_91347_sf_mode_19",
+            "dataset": "BreakingBad",
+            "subset": "artifact",
+            "folder": "BreakingBad/artifact/91347_sf/mode_19",
+            "files": [
+                "piece_0.obj",
+                "piece_1.obj",
+                "piece_2.obj",
+                "piece_3.obj",
+                "piece_4.obj",
+                "piece_5.obj",
+                "piece_6.obj",
+                "piece_7.obj",
+                "piece_8.obj",
+                "piece_9.obj",
+                "piece_10.obj",
+                "piece_11.obj",
+                "piece_12.obj",
+                "piece_13.obj",
+                "piece_14.obj",
+                "piece_15.obj",
+                "piece_16.obj"
+            ]
+        },
+        "BreakingBad_artifact_127243_sf_mode_19": {
+            "id": "BreakingBad_artifact_127243_sf_mode_19",
+            "dataset": "BreakingBad",
+            "subset": "artifact",
+            "folder": "BreakingBad/artifact/127243_sf/mode_19",
+            "files": [
+                "piece_0.obj",
+                "piece_1.obj",
+                "piece_2.obj",
+                "piece_3.obj",
+                "piece_4.obj",
+                "piece_5.obj",
+                "piece_6.obj",
+                "piece_7.obj",
+                "piece_8.obj",
+                "piece_9.obj",
+                "piece_10.obj",
+                "piece_11.obj"
+            ]
+        },
+        "FantasticBreaks_01047": {
+            "id": "FantasticBreaks_01047",
+            "dataset": "FantasticBreaks",
+            "subset": "v1",
+            "folder": "FantasticBreaks/01047",
+            "files": [
+                "model_b_0.ply",
+                "model_r_0.ply"
+            ]
+        },
+        "FantasticBreaks_17001": {
+            "id": "FantasticBreaks_17001",
+            "dataset": "FantasticBreaks",
+            "subset": "v1",
+            "folder": "FantasticBreaks/17001",
+            "files": [
+                "model_b_0.ply",
+                "model_r_0.ply"
+            ]
+        },
+        "FantasticBreaks_19002": {
+            "id": "FantasticBreaks_19002",
+            "dataset": "FantasticBreaks",
+            "subset": "v1",
+            "folder": "FantasticBreaks/19002",
+            "files": [
+                "model_b_0.ply",
+                "model_r_0.ply"
+            ]
+        }
+    }
+}
