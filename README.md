@@ -104,22 +104,22 @@
   <tr>
     <td>GARF-mini-diffusion</td>
     <td><a href="https://huggingface.co/google/paligemma2-3b-pt-224">PTv3-E</a></td>
-    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">GARF-mini-E-FM</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">GARF-mini-E-Diff</a></td>
     <td>replace the Flow-matching model with Diffusion model</td>
   </tr>
   <tr>
     <td>GARF</td>
     <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">PTv3-EAO</a></td>
-    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-mix-224-pt">GARF-E-FM</a></td>
-    <td>large-scale pretrained on everyday+artifact+other subsets of Breaking Bad</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-mix-224-pt">GARF-EAO-FM</a></td>
+    <td>large-scale trained on everyday+artifact+other subsets of Breaking Bad for both backbone and Flow-matching (cost most time!)</a></td>
   </tr>
-  <tr>
+  <!-- <tr>
     <td>GARF-Pro</td>
     <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">PTv3-E</a></td>
     <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-bridge">GARF-Pro-EAO-FM</a></td>
     <td>train Flow-matching model with everyday+artifact+other subsets</a></td>
-  </tr>
-  <tr>
+  </tr> -->
+  <!-- <tr>
     <td>GARF-Pro-Eggshell</td>
     <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">PTv3-E</a></td>
     <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-bridge">GARF-Pro-EAO-FM-Eggshell</a></td>
@@ -136,13 +136,13 @@
     <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">PTv3-E</a></td>
     <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-bridge">GARF-Pro-EAO-FM-Lithics</a></td>
     <td>fine-tuned on the lithics subset of our Fractuna dataset</a></td>
-  </tr>
-  <tr>
+  </tr> -->
+  <!-- <tr>
     <td>GARF-Ultra</td>
     <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">PTv3-EAO</a></td>
     <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-bridge">GARF-Ultra-EAO-FM</a></td>
     <td>large-scale trained on everyday+artifact+other for both backbone and Flow-matching (cost most time!)</a></td>
-  </tr>
+  </tr> -->
 </table>
 
 
