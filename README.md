@@ -164,7 +164,7 @@ to install the dependencies and activate the virtual environment.
 ## License
 
 ## Acknowledgement
- We gratefully acknowledge the Complutense University of Madrid for providing access to the fossil samples. This work was supported in part through NSF grants 2152565, 2238968, 2322242, and 2426993, and the NYU IT High Performance Computing resources, services, and staff expertise. 
+ We gratefully acknowledge the Physical Anthropology Unit, Universidad Complutense de Madrid for providing access to the human skeletons under their curation. This work was supported in part through NSF grants 2152565, 2238968, 2322242, and 2426993, and the NYU IT High Performance Computing resources, services, and staff expertise. 
 
 
   <!-- ```bibtex
