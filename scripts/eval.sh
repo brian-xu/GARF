@@ -1,0 +1,15 @@
+EVAL_NAME="everyday_vol_one_step_init"
+HYDRA_FULL_ERROR=1 python eval.py \
+    seed=42 \
+    experiment=denoiser_flow_matching \
+    experiment_name=$EVAL_NAME \
+    loggers=csv \
+    loggers.csv.save_dir=logs/GARF \
+    trainer.num_nodes=1 \
+    trainer.devices=[0] \
+    data.data_root=../breaking_bad_vol.hdf5 \
+    data.categories="['everyday']" \
+    data.batch_size=64 \
+    ++data.random_anchor=false \
+    ckpt_path=output/GARF.ckpt \
+    ++model.inference_config.one_step_init=true
