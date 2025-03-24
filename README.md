@@ -52,7 +52,7 @@
 
 
 ## News 🚀🚀🚀
-- `2025/01/29`: We release the [GARF](https://huggingface.co/collections/IPEC-COMMUNITY/foundation-vision-language-action-model-6795eb96a9c661f90236acbb), which achieves state-of-the-art performance across a diverse range of synthetic and real-world benchmarks. Try our [demo](https://garf-demo.pages.dev/) on your own data! 
+- `2025/03/25`: We release the [GARF](https://huggingface.co/collections/IPEC-COMMUNITY/foundation-vision-language-action-model-6795eb96a9c661f90236acbb), which achieves state-of-the-art performance across a diverse range of synthetic and real-world benchmarks. Try our [demo](https://garf-demo.pages.dev/) on your own data! 
 
 ## 📖 Table of Contents
 
@@ -63,17 +63,59 @@
 - [Citation](#citation)
 - [License](#license)
 
+## 📄 Document
 
 
+### ⏩ **Installation**
+
+### 💾 **Data Preparation**
+
+### 🎯 **Evaluation**
+
+### ⭐ **Stage 1: Fracture-aware Pretraining**
+
+### ⭐ **Stage 2: Flow-matching Training**
+
+### ⭐ **(Optional) Stage 3: LoRA-based Fine-tuning**
 
 
+<!-- ### 🎯💾⏩🌈🌟⭐🥑♣️♠️♟️🎮✨🏷️📍📌✈️ Data Preparation -->
+
+## 😺 Model Zoo
 
 
-
-
-
-
-
+<table>
+  <tr>
+    <th>Model Name</th>
+    <th>Backbone</th>
+    <th>Model</th>
+    <th>Note</th>
+  </tr>
+  <tr>
+    <td>GARF-mini</td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">spatialvla-4b-224-pt</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-fractal">spatialvla-4b-224-sft-fractal</a></td>
+    <td>fine-tuning on the fractal dataset, testing on simple-env google-robot, TABLE II ine-tuning</a></td>
+  </tr>
+  <tr>
+    <td>GARF-mini-diffusion</td>
+    <td><a href="https://huggingface.co/google/paligemma2-3b-pt-224">google/paligemma2-3b-pt-224</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">spatialvla-4b-224-pt</a></td>
+    <td>pretrained on openx and rh20t, TABLE I and II zero-shot, Fig.5 and 7</td>
+  </tr>
+  <tr>
+    <td>GARF</td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">spatialvla-4b-224-pt</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-mix-224-pt">spatialvla-4b-mix-224-pt</a></td>
+    <td>fine-tuning on the fractal and bridge mixture dataset, Fig.5 and 7</a></td>
+  </tr>
+  <tr>
+    <td>GARF-Pro</td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">spatialvla-4b-224-pt</a></td>
+    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-bridge">spatialvla-4b-224-sft-bridge</a></td>
+    <td>fine-tuning on the bridge dataset, testing on simple-env widowx-robot, TABLE I fine-tuning</a></td>
+  </tr>
+</table>
 
 
 
