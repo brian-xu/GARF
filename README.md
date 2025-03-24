@@ -57,11 +57,12 @@
 ## 📖 Table of Contents
 
 - [📄 Document](#Document)
-- [🤗 Model Zoo](#data-preparation)
+- [😺 Model Zoo](#data-preparation)
 - [✅ Evaluation Performance](#Performance)
 - [🙋 FAQs](#faq)
 - [Citation](#citation)
 - [License](#license)
+
 
 ## 📄 Document
 
@@ -78,8 +79,11 @@
 
 ### ⭐ **(Optional) Stage 3: LoRA-based Fine-tuning**
 
+### 📂 **Deploy Your Method**
 
-<!-- ### 🎯💾⏩🌈🌟⭐🥑♣️♠️♟️🎮✨🏷️📍📌✈️ Data Preparation -->
+### 🎮 **Visualization**
+
+<!-- ### 🎮✒️📂🗂️📝📦🎯💾⏩🌈🌟⭐🥑♣️♠️♟️🎮✨🏷️📍📌✈️ Data Preparation -->
 
 ## 😺 Model Zoo
 
@@ -136,8 +140,19 @@
 </table>
 
 
+## 😺 Model Zoo
+
+## ✅ Evaluation Performance
+
+## 🙋 FAQs
 
 
+## Citation
+
+## License
+
+## Acknowledgement
+ We gratefully acknowledge the Complutense University of Madrid for providing access to the fossil samples. This work was supported in part through NSF grants 2152565, 2238968, 2322242, and 2426993, and the NYU IT High Performance Computing resources, services, and staff expertise. 
 
 
   <!-- ```bibtex
