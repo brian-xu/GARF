@@ -74,18 +74,78 @@ uv sync
 uv sync --extra post
 source ./venv/bin/activate
 ```
-to install the dependencies and activate the virtual environment.
+to install the dependencies and activate the virtual environment. Please be noted that `flash-attn` requires CUDA 12.0 or above and you may fail to install it if you are using an older version of CUDA and NVCC.
 
 ### 💾 **Data Preparation**
+We will soon provide the script to process the raw Breaking Bad dataset into our hdf5 format, right now, you can directly download our processed dataset from following links. Fractuna dataset will be released soon.
+<table>
+  <tr>
+    <th>Dataset</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>Breaking Bad</td>
+    <td><a href="https://jdscript-my.sharepoint.com/:f:/g/personal/shared_jdscript_app/EqEvBJxkWcJOpLDqLTaYiQgBayhtJWEzwO7ftRUf6dMBMw?e=oREaca" target="_blank">OneDrive</a></td>
+  </tr>
+  <tr>
+    <td>Breaking Bad Volume Constrained</td>
+    <td><a href="https://jdscript-my.sharepoint.com/:f:/g/personal/shared_jdscript_app/EqEvBJxkWcJOpLDqLTaYiQgBayhtJWEzwO7ftRUf6dMBMw?e=oREaca" target="_blank">OneDrive</a></td>
+  </tr>
+  <tr>
+    <td>Breaking Bad Other</td>
+    <td><a href="https://jdscript-my.sharepoint.com/:f:/g/personal/shared_jdscript_app/EqEvBJxkWcJOpLDqLTaYiQgBayhtJWEzwO7ftRUf6dMBMw?e=oREaca" target="_blank">OneDrive</a></td>
+  </tr>
+</table>
 
 ### 🎯 **Evaluation**
-
+We provide the evaluation script in `scripts/eval.sh`.
 ### ⭐ **Stage 1: Fracture-aware Pretraining**
-
+```bash
+python train.py \
+    experiment=pretraining_frac_seg \
+    experiment_name=pretraining \
+    data.categories="['everyday']" \
+    project_name="GARF" \
+    trainer.num_nodes=$NUM_NODES \
+    data.data_root=./breaking_bad_vol.hdf5 \
+    data.num_workers=8 \
+    data.batch_size=32 \
+    data.multi_ref=True \
+    tags='["pretraining", 'everyday']' \
+    ckpt_path=./xxx # to resume training
+```
 ### ⭐ **Stage 2: Flow-matching Training**
-
+```bash
+python train.py \
+    experiment=denoiser_flow_matching \
+    experiment_name=denoiser \
+    data.categories="['everyday']" \
+    project_name="GARF" \
+    trainer.num_nodes=$NUM_NODES \
+    data.data_root=./breaking_bad_vol.hdf5 \
+    data.num_workers=8 \
+    data.batch_size=32 \
+    data.multi_ref=True \
+    tags='["denoiser", 'everyday']' \
+    model.feature_extractor_ckpt=output/feature_extractor.ckpt \ # load the pretrained feature extractor
+    ckpt_path=./xxx # to resume training
+```
 ### ⭐ **(Optional) Stage 3: LoRA-based Fine-tuning**
-
+```bash
+python train.py \
+    experiment=finetune \
+    experiment_name=finetune \
+    data.categories="['egg']" \
+    project_name="GARF" \
+    trainer.num_nodes=$NUM_NODES \
+    data.data_root=./finetune_egg.hdf5 \
+    data.num_workers=8 \
+    data.batch_size=32 \
+    data.multi_ref=True \
+    tags='["finetune", 'egg']' \
+    ckpt_path=./xxx \
+    finetuning=true
+```
 ### 📂 **Deploy Your Method**
 
 ### 🎮 **Visualization**
