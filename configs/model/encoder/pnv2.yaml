@@ -1,3 +1,0 @@
-_target_: assembly.backbones.pointnet2.PointNet2PTMSGDynamic
-feat_in: 6
-feat_out: ${..pc_feat_dim}
