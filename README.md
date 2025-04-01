@@ -88,15 +88,18 @@ We will soon provide the script to process the raw Breaking Bad dataset into our
   </tr>
   <tr>
     <td>Breaking Bad</td>
-    <td><a href="https://jdscript-my.sharepoint.com/:f:/g/personal/shared_jdscript_app/EqEvBJxkWcJOpLDqLTaYiQgBayhtJWEzwO7ftRUf6dMBMw?e=oREaca" target="_blank">OneDrive</a></td>
+    <td><a href="https://jdscript-my.sharepoint.com/:f:/g/personal/shared_jdscript_app/EqEvBJxkWcJOpLDqLTaYiQgBayhtJWEzwO7ftRUf6dMBMw?e=oREaca" target="_blank">OneDrive</a>
+    <a href="https://drive.google.com/file/d/1dBc7QRjOXIuYm-ssZo59vSlMD29xF5eM/view?usp=drive_link" target="_blank">Google Drive</a></td>
   </tr>
   <tr>
     <td>Breaking Bad Volume Constrained</td>
-    <td><a href="https://jdscript-my.sharepoint.com/:f:/g/personal/shared_jdscript_app/EqEvBJxkWcJOpLDqLTaYiQgBayhtJWEzwO7ftRUf6dMBMw?e=oREaca" target="_blank">OneDrive</a></td>
+    <td><a href="https://jdscript-my.sharepoint.com/:f:/g/personal/shared_jdscript_app/EqEvBJxkWcJOpLDqLTaYiQgBayhtJWEzwO7ftRUf6dMBMw?e=oREaca" target="_blank">OneDrive</a>
+    <a href="https://drive.google.com/file/d/1vhYZGHNfunI3K5vTi9RtMugkUKdHSn5f/view?usp=drive_link" target="_blank">Google Drive</a></td>
   </tr>
   <tr>
     <td>Breaking Bad Other</td>
-    <td><a href="https://jdscript-my.sharepoint.com/:f:/g/personal/shared_jdscript_app/EqEvBJxkWcJOpLDqLTaYiQgBayhtJWEzwO7ftRUf6dMBMw?e=oREaca" target="_blank">OneDrive</a></td>
+    <td><a href="https://jdscript-my.sharepoint.com/:f:/g/personal/shared_jdscript_app/EqEvBJxkWcJOpLDqLTaYiQgBayhtJWEzwO7ftRUf6dMBMw?e=oREaca" target="_blank">OneDrive</a>
+    <a href="https://drive.google.com/file/d/1XO2BTCTkn9c9JPk95vkZk48rdEVlyoDd/view?usp=drive_link" target="_blank">Google Drive</a></td>
   </tr>
 </table>
 
@@ -212,17 +215,17 @@ After running the evaluation, per sample transformations will be saved in `logs/
   </tr>
   <tr>
     <td>GARF-mini</td>
-    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-fractal">GARF-mini-E-FM</a></td>
+    <td><a href="https://drive.google.com/file/d/1owxt6JGhVcr_nNzqgYTjHbLM1nzLI_F0/view?usp=drive_link">GARF-mini-E-FM</a></td>
     <td>pretrained on everyday subset of Breaking Bad with Flow-matching model. </a></td>
   </tr>
   <tr>
     <td>GARF-mini-diffusion</td>
-    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-pt">GARF-mini-E-Diff</a></td>
+    <td><a href="https://drive.google.com/file/d/1aSKR3SF_rrsEN8w1R_7vR4WDVrkf5a7-/view?usp=sharing">GARF-mini-E-Diff</a></td>
     <td>replace the Flow-matching model with Diffusion model</td>
   </tr>
   <tr>
     <td>GARF</td>
-    <td><a href="https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-mix-224-pt">GARF-EAO-FM</a></td>
+    <td><a href="https://drive.google.com/file/d/1ZN0-Y2HaVe6zI7q4xUVVvhbSqKGbORfg/view?usp=drive_link">GARF-EAO-FM</a></td>
     <td>large-scale trained on everyday+artifact+other subsets of Breaking Bad for both backbone and Flow-matching (cost most time!)</a></td>
   </tr>
 </table>
@@ -238,11 +241,12 @@ After running the evaluation, per sample transformations will be saved in `logs/
 | Breaking Bad Vol | Artifact | GARF-mini | 7.67 | 1.77 | 93.34% |
 
 ## 🙋 FAQs
-
+For frequently asked questions, please refer to our [GitHub Issues](https://github.com/ai4ce/GARF/issues) page. You can search existing issues or create a new one if you don't find an answer to your question.
 
 ## Citation
 
 ## License
+This project is licensed under the GPL License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgement
  We gratefully acknowledge the Physical Anthropology Unit, Universidad Complutense de Madrid for providing access to the human skeletons under their curation. This work was supported in part through NSF grants 2152565, 2238968, 2322242, and 2426993, and the NYU IT High Performance Computing resources, services, and staff expertise. 
