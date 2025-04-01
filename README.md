@@ -244,6 +244,15 @@ After running the evaluation, per sample transformations will be saved in `logs/
 For frequently asked questions, please refer to our [GitHub Issues](https://github.com/ai4ce/GARF/issues) page. You can search existing issues or create a new one if you don't find an answer to your question.
 
 ## Citation
+If you find this project useful, please consider citing our paper:
+```bibtex
+@article{Li2025GARF,
+ title={GARF: Learning Generalizable 3D Reassembly for Real-World Fractures},
+ author={Sihang Li and Zeyu Jiang and Grace Chen and Chenyang Xu and Siqi Tan and Xue Wang and Irving Fang and Kristof Zyskowski and Shannon McPherron and Radu Iovita and Chen Feng and Jing Zhang},
+ year={2025},
+ journal={arXiv preprint arXiv:2412.00138},
+}
+```
 
 ## License
 This project is licensed under the GPL License. See the [LICENSE](LICENSE) file for details.

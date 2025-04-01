@@ -7,4 +7,6 @@ lightning_logs/
 *.out
 **/*.egg-info/
 logs
-.venv
+.vscode
+.idea
+.DS_Store
