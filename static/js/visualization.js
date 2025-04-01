@@ -1,4 +1,5 @@
 import * as THREE from './three.module.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 console.log(THREE);
 // 初始化场景 
 const scene = new THREE.Scene();
@@ -6,6 +7,11 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 600, 0.1, 100
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, 600);
 document.getElementById('visualization-container').appendChild(renderer.domElement);
+
+// 初始化轨道控制器
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.05;
 
 // 添加点云
 import { PLYLoader } from './PLYLoader.js';
@@ -89,6 +95,7 @@ slider.addEventListener('input', (event) => {
 // 动画循环
 function animate() {
     requestAnimationFrame(animate);
+    controls.update(); // 更新控制器
     renderer.render(scene, camera);
 }
 animate();

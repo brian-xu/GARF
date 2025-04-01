@@ -6,9 +6,9 @@
         content="Unleashing the Power of Data Synthesis in Visual Localization">
   <meta name="keywords" content="Visual Localization, 3D Gaussian, Data Synthesis, Adversarial Training">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RAP</title>
+  <title>GARF</title>
   <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>😎</text></svg>">
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>🐈</text></svg>">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
@@ -166,7 +166,7 @@
             <div class="publication-links">
               <span class="link-block">
                  <!-- add here later. -->
-                <a href="static/RAP_Paper.pdf" target="_blank"
+                <a href="static/garf.pdf" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -201,7 +201,7 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming Soon)</span>
                   </a>
               </span>
               <span class="link-block">
@@ -220,7 +220,7 @@
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>FRACTUNA Dataset (Coming Soon)</span>
+                  <span>FRACTURA Dataset (Coming Soon)</span>
                 </a>
               </span>
             </div>
@@ -232,41 +232,115 @@
   </div>
 </section>
 
-<section class="hero teaser" style="margin-bottom: 3rem">
+
+<section class="hero teaser" style="margin-bottom: 2rem"></section>
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width teaser no-margin">
 
-        <div class="swiper swiper1">
+        <!-- <div class="swiper swiper1" style="max-height: 400px; margin-bottom: 1rem;">
           <div class="swiper-wrapper">
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/church.mp4" type="video/mp4">
+            <video muted autoplay loop controls class="swiper-slide" style="max-height: 400px; object-fit: contain;">
+              <source src="static/videos/fractura/bowl.mp4" type="video/mp4">
             </video>
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/college.mp4" type="video/mp4">
+            <video muted autoplay loop controls class="swiper-slide" style="max-height: 400px; object-fit: contain;">
+              <source src="static/videos/fractura/plate.mp4" type="video/mp4">
             </video>
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/hospital.mp4" type="video/mp4">
+            <video muted autoplay loop controls class="swiper-slide" style="max-height: 400px; object-fit: contain;">
+              <source src="static/videos/fractura/pot.mp4" type="video/mp4">
             </video>
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/shop.mp4" type="video/mp4">
+            <video muted autoplay loop controls class="swiper-slide" style="max-height: 400px; object-fit: contain;">
+              <source src="static/videos/fractura/vase1.mp4" type="video/mp4">
             </video>
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/court.mp4" type="video/mp4">
+            <video muted autoplay loop controls class="swiper-slide" style="max-height: 400px; object-fit: contain;"></video>
+              <source src="static/videos/fractura/vase2.mp4" type="video/mp4">
             </video>
           </div>
           <div class="swiper-pagination"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-        </div>
+        </div> -->
 
-        <p class="tldr" style="font-size: 15px;">
+        <p class="tldr" style="font-size: 15px; margin-top: 0.5rem;">
           <b>TL;DR</b>: A generalizable flow matching-based 3D reassembly method trained on <b>1.9 Million</b> fractures, enabling precise real-world fragment pose alignment. 😊Achieves strong performance across extensive benchmarks, concise code with efficient performance.
         </p>
       </div>
     </div>
   </div>
 </section>
+
+
+<!-- Visualization Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-multiline is-mobile has-text-centered">
+
+
+
+      <!-- 第一行：五个 video -->
+      <div class="column is-one-fifth is-6-mobile">
+        <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+          <source src="static/videos/fractura/bowl.mp4" type="video/mp4">
+        </video>
+        <model-viewer src="static/models/fractura/bowl.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+          <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Bowl</div>
+        </model-viewer>
+      </div>
+      <!-- 第一行：五个 video -->
+      <div class="column is-one-fifth is-6-mobile">
+        <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+          <source src="static/videos/fractura/plate.mp4" type="video/mp4">
+        </video>
+        <model-viewer src="static/models/fractura/plate.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+          <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">plate</div>
+        </model-viewer>
+      </div>
+      <!-- 第一行：五个 video -->
+      <div class="column is-one-fifth is-6-mobile">
+        <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+          <source src="static/videos/fractura/pot.mp4" type="video/mp4">
+        </video>
+        <model-viewer src="static/models/fractura/pot.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+          <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">pot</div>
+        </model-viewer>
+      </div>
+      <!-- 第一行：五个 video -->
+      <div class="column is-one-fifth is-6-mobile">
+        <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+          <source src="static/videos/fractura/vase1.mp4" type="video/mp4">
+        </video>
+        <model-viewer src="static/models/fractura/vase1.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+          <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Vase</div>
+        </model-viewer>
+      </div>
+      <!-- 第一行：五个 video -->
+      <div class="column is-one-fifth is-6-mobile">
+        <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+          <source src="static/videos/fractura/vase2.mp4" type="video/mp4">
+        </video>
+        <model-viewer src="static/models/fractura/vase2.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+          <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Vase</div>
+        </model-viewer>
+      </div>
+
+      <div class="content has-text-centered">
+        <div class="notification is-info is-light" style="text-align: justify;">
+          <p>
+            <strong>Note: All the fragments above are obtained from real scans. </strong>
+            Even when encountering unfamiliar fragments, and even if some parts are missing, GARF can still flawlessly assemble them and precisely align their pose. Try rotating and zooming in on the 3D models to observe how seamlessly they fit together!
+          </p>
+        </div>
+      </div>
+
+      </div>
+
+  <!-- 引入 model-viewer -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</section>
+
+
+
+
 
 <!-- How it works -->
 <section class="section">
@@ -298,205 +372,374 @@
         <p id="text-content" style="text-align: justify;">
           <b>Overall illustration of GARF</b>. Our framework comprises two main components: (i) Fracture-aware pretraining leverages <b>14x</b> more data than previous methods to learn the local fracture features via fracture point segmentation, and (ii) Flow-based reassembly on SE(3) leverages the SO(3) manifold for precise rotation estimation. At inference time, one-step pre-assembly strategy provides better initial poses, enhancing robustness against unseen objects and increasing numbers of fractures.
         </p>
-        <br>
-        <!-- Here, the changeContent's parameter is just the number of the button. Has no intrinsic association with the content -->
-        <button id="method_button1" class="btn" onclick="changeContent(1)">1. Preprocessing Training Dataset</button>
-        <button id="method_button2" class="btn" onclick="changeContent(2)">2. Two-Branch Joint Training</button>
-        <!--          <button id="method_button3" class="btn" onclick="changeContent(3)">3. Local Geometric Optimization</button>-->
-        <br>
-        <br>
-        <div class="content has-text-justified">
-          <img id="image-content" src="static/images/3DGS.png" alt="3DGS"/>
-          <p id="text-content">
-            <b>Overall illustration of appearance-varying 3DGS</b>. The framework models varying appearances using 3D
-            Gaussians enhanced with appearance colors. It initializes 3D Gaussians from SfM data, refines their
-            appearance by learnable sampling and blending weights computed via an encoder and MLP, and renders images
-            by a differentiable rasterizer with edge refinement to minimize the rendering loss.
-          </p>
-
         </div>
       </div>
-
-      <script>
-          document.getElementById('method_button1').classList.add('active');
-
-          function changeContent(buttonNumber) {
-              const textElement = document.getElementById('text-content');
-              const imageElement = document.getElementById('image-content');
-
-              document.getElementById('method_button1').classList.remove('active');
-              document.getElementById('method_button2').classList.remove('active');
-              // document.getElementById('method_button3').classList.remove('active');
-
-              // Add 'active' class to the clicked button so that it will have a different color when its content is present
-              document.getElementById('method_button' + buttonNumber).classList.add('active');
-
-              if (buttonNumber === 1) {
-                  textElement.innerHTML = "<b>Overall illustration of appearance-varying 3DGS</b>. The framework models varying appearances using 3D Gaussians enhanced with appearance colors. It initializes 3D Gaussians from SfM data, refines their appearance by learnable sampling and blending weights computed via an encoder and MLP, and renders images by a differentiable rasterizer with edge refinement to minimize the rendering loss.";
-                  imageElement.classList.remove('hidden');
-                  imageElement.src = "static/images/3DGS.png";
-                  imageElement.alt = "3DGS";
-              } else if (buttonNumber === 2) {
-                  textElement.innerHTML = "<b>Pipeline of the Two-branch Joint Training.</b> We lift multiple RGB video sequences into 3D Gaussian Splats, which serve as our data engine. The branch-1 inputs paired real and synthetic images to regress poses, with a discriminator to bridge the syn-to-real gap. The branch-2 generates views with novel poses and appearances, which are fed into the same pose regressor as additional supervision.";
-                  imageElement.classList.remove('hidden');
-                  imageElement.src = "static/images/main.png";
-                  imageElement.alt = "Main";
-              } else if (buttonNumber === 3) {
-                  textElement.innerHTML = "Under Construction";
-                  imageElement.classList.remove('hidden');
-                  imageElement.src = "static/images/overview.png";
-                  imageElement.alt = "Overview";
-              }
-          }
-      </script>
-
     </div>
-  </div>
 </section>
 
+<!-- Visualization Section -->
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Post Refinement</h2>
+        <h2 class="title is-3">Assembly Results</h2>
+
+        <!-- Import model-viewer component -->
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+        
         <div class="content has-text-justified">
           <p>
-            At test time, RAP's initial predicted pose will be used to render an RGB-D image via 3DGS. Together with
-            <a href="https://github.com/naver/mast3r" target="_blank" style="color: #007bff">
-              MASt3R
-            </a>, we can obtain 2D-3D correspondences to perform RANSAC-PnP, resulting in a refined pose.
+            Explore our 3D reassembly results interactively. The models below demonstrate how GARF accurately aligns fragments across different material categories. You can <b>rotate, zoom, and inspect the reassembled objects from any angle</b>.
           </p>
         </div>
 
-        <div class="swiper swiper2">
-          <div class="swiper-wrapper">
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/RAPref1.mp4" type="video/mp4">
+        <h2 class="title is-4">Breaking Bad Dataset</h2>        
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-3-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/breakingbad/840.mp4" type="video/mp4">
             </video>
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/RAPref2.mp4" type="video/mp4">
-            </video>
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/RAPref3.mp4" type="video/mp4">
-            </video>
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/RAPref4.mp4" type="video/mp4">
-            </video>
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/RAPref5.mp4" type="video/mp4">
-            </video>
+            <model-viewer src="static/models/breakingbad/840.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+              <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Everyday</div>
+            </model-viewer>
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="column is-3-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/breakingbad/1969.mp4" type="video/mp4">
+            </video>
+            <model-viewer src="static/models/breakingbad/1969.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+              <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Everyday</div>
+            </model-viewer>
+          </div>
+          <div class="column is-3-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/breakingbad/2493.mp4" type="video/mp4">
+            </video>
+            <model-viewer src="static/models/breakingbad/2493.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+              <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Everyday</div>
+            </model-viewer>
+          </div>
+          <div class="column is-3-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/breakingbad/3774.mp4" type="video/mp4">
+            </video>
+            <model-viewer src="static/models/breakingbad/3774.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+              <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Everyday</div>
+            </model-viewer>
+          </div>
         </div>
+
+        
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-3-desktop is-6-mobile</div>">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/breakingbad/1327.mp4" type="video/mp4">
+            </video>
+            <model-viewer src="static/models/breakingbad/1327.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+              <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Artifact</div>
+            </model-viewer>
+          </div>
+          <div class="column is-3-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/breakingbad/152.mp4" type="video/mp4">
+            </video>
+            <model-viewer src="static/models/breakingbad/152.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+              <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Artifact</div>
+            </model-viewer>
+          </div>
+          <div class="column is-3-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/breakingbad/1695.mp4" type="video/mp4">
+            </video>
+            <model-viewer src="static/models/breakingbad/1695.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+              <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Artifact</div>
+            </model-viewer>
+          </div>
+          <div class="column is-3-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/breakingbad/2106.mp4" type="video/mp4">
+            </video>
+            <model-viewer src="static/models/breakingbad/2106.glb" camera-controls interaction-prompt="none" auto-rotate shadow-intensity="1" exposure="0.7" style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
+              <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Artifact</div>
+            </model-viewer>
+          </div>
+        </div>
+
+
+
       </div>
-    </div>
   </div>
-  </div>
+</div>
 </section>
 
-<!-- More Visualization -->
+
+
+<!-- Visualization Section -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">More Visualizations of Appearance-Varying 3DGS</h2>
-        <div class="swiper swiper3">
-          <div class="swiper-wrapper">
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/3DGS_MARS_NVS.mp4" type="video/mp4">
+
+        <!-- Import model-viewer component -->
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+        
+
+        <h2 class="title is-4">Fractura Dataset (synthetic)</h2>
+        <div class="content has-text-justified">
+          <p>
+            Following the simulated fracture method used in Breaking Bad, we also performed simulated breakage on the complete objects in our Fractura dataset.
+          </p>
+        </div>        
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-2-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fractura_syn/egg.mp4" type="video/mp4">
             </video>
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/3DGS_MARS_Test.mp4" type="video/mp4">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fractura_syn/egg2.mp4" type="video/mp4">
             </video>
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/3DGS_MARS_Vary.mp4" type="video/mp4">
-            </video>
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/3DGS_Cam_Test.mp4" type="video/mp4">
-            </video>
-            <video muted autoplay loop controls class="swiper-slide">
-              <source src="static/videos/3DGS_Cam_Vary.mp4" type="video/mp4">
-            </video>
-            <div class="swiper-slide image-grid" id="cambridge_block">
-              <!-- insert all gifs here -->
-              <img src="static/images/gifs/image125.gif" alt="1">
-              <img src="static/images/gifs/image126.gif" alt="2">
-              <img src="static/images/gifs/image127.gif" alt="3">
-              <img src="static/images/gifs/image128.gif" alt="4">
-              <img src="static/images/gifs/image129.gif" alt="5">
-              <img src="static/images/gifs/image130.gif" alt="6">
-              <img src="static/images/gifs/image131.gif" alt="7">
-              <img src="static/images/gifs/image132.gif" alt="8">
-              <img src="static/images/gifs/image133.gif" alt="9">
-              <img src="static/images/gifs/image134.gif" alt="10">
-              <img src="static/images/gifs/image135.gif" alt="11">
-              <img src="static/images/gifs/image136.gif" alt="12">
-            </div>
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="column is-2-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fractura_syn/os_coxae.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fractura_syn/os_coxae2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-2-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fractura_syn/os_coxae3.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fractura_syn/vertebrae5.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-2-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fractura_syn/rib.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fractura_syn/vertebrae.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-2-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fractura_syn/vertebrae1.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fractura_syn/vertebrae2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-2-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fractura_syn/vertebrae3.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fractura_syn/vertebrae4.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
+
+
       </div>
-    </div>
   </div>
+</div>
 </section>
 
-<!-- MARS visualization -->
+
+
+<!-- Visualization Section -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">RAP Results on MARS</h2>
-        <!-- Buttons positioned over the video -->
-        <button id="video_button1" class="btn" onclick="changeVideo(1)">0011</button>
-        <button id="video_button2" class="btn" onclick="changeVideo(2)">0015</button>
-        <button id="video_button3" class="btn" onclick="changeVideo(3)">0037</button>
-        <button id="video_button4" class="btn" onclick="changeVideo(4)">0041</button>
-        <br>
-        <br>
-        <!-- Video Player -->
-        <video muted autoplay loop controls id="videoPlayer4">
-          <source src="./static/videos/0011.mp4" type="video/mp4">
-        </video>
-        <!-- Change Function -->
-        <script>
-            // Map button numbers to video file paths
-            const videoMap = {
-                1: "./static/videos/0011.mp4",
-                2: "./static/videos/0015.mp4",
-                3: "./static/videos/0037.mp4",
-                4: "./static/videos/0041.mp4"
-            };
 
-            document.addEventListener('DOMContentLoaded', () => {
-                changeVideo(1);
-            });
+        <!-- Import model-viewer component -->
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+        
 
-            function changeVideo(buttonNumber) {
-                const videoPlayer = document.getElementById('videoPlayer4');
-                // const videoSource = document.getElementById('videoSource');
+        <h2 class="title is-4">Fantastic Break Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            Although the objects in the Fantastic Break dataset only break into two pieces, the challenge lies in the fact that the fracture surfaces are obtained from <b>real scans, not simulations.</b>
+          </p>
+        </div>        
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-2-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fantastic/123.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fantastic/141.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-2-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fantastic/94.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fantastic/97.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-2-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fantastic/82.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fantastic/88.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-2-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fantastic/31.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fantastic/69.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-2-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fantastic/30.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fantastic/29.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-2-desktop is-6-mobile">
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fantastic/7.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted style="width: 100%; object-fit: cover; margin-bottom: 2px;">
+              <source src="static/videos/fantastic/13.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
 
-                // Update video source
-                // videoSource.src = videoMap[buttonNumber] + '?t=' + new Date().getTime(); // Avoid caching
-                videoPlayer.src = videoMap[buttonNumber];
-                //videoPlayer.load();
-                videoPlayer.play();
 
-                // Add 'active' class to the clicked button so that it will have a different color when its content is present
-                document.getElementById('video_button1').classList.remove('active');
-                document.getElementById('video_button2').classList.remove('active');
-                document.getElementById('video_button3').classList.remove('active');
-                document.getElementById('video_button4').classList.remove('active');
-                document.getElementById('video_button' + buttonNumber).classList.add('active');
-            }
-        </script>
       </div>
-    </div>
   </div>
+</div>
 </section>
+
+
+<style>
+  .visualization-container {
+    margin: 20px 0;
+  }
+  
+  #main-model {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .hotspot {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: none;
+    background-color: #ff5252;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .hotspot:hover {
+    background-color: #ff0000;
+    transform: scale(1.2);
+  }
+  
+  .annotation {
+    position: absolute;
+    transform: translate(calc(-50% + 12px), calc(-100% - 12px));
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+  }
+  
+  .hotspot:hover .annotation {
+    opacity: 1;
+  }
+  
+  /* Progress bar styles */
+  .progress-bar {
+    display: block;
+    width: 33%;
+    height: 10%;
+    max-height: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 25px;
+    box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .update-bar {
+    background-color: rgba(0, 133, 255, 0.9);
+    width: 0%;
+    height: 100%;
+    border-radius: 25px;
+    float: left;
+    transition: width 0.3s;
+  }
+  
+  #ar-button {
+    background-image: url(static/images/ar_icon.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 12px 50%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    padding: 0px 16px 0px 40px;
+    font-family: Roboto Regular, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    color:#4285f4;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 18px;
+    border: 1px solid #DADCE0;
+  }
+  
+  #ar-button:active {
+    background-color: #E8EAED;
+  }
+  
+  #ar-button:focus {
+    outline: none;
+  }
+  
+  #ar-prompt {
+    position: absolute;
+    left: 50%;
+    bottom: 175px;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    visibility: hidden;
+  }
+</style>
+
 
 
 <!-- BibTeX -->
@@ -551,6 +794,7 @@
     </div>
   </div>
 </footer>
+
 
 </body>
 
