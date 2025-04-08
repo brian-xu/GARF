@@ -7,8 +7,8 @@
   A generalizable flow matching-based 3D reassembly method trained on 1.9 Million fractures, enabling precise real-world fragment pose alignment. 😊Achieves strong performance across extensive benchmarks, concise code with efficient performance.
   </p>
   <p align="center">
-    <a href="https://jytime.github.io/data/VGGT_CVPR25.pdf" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Paper-VGGT" alt="Paper PDF">
+    <a href="https://ai4ce.github.io/GARF/static/GARF.pdf" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Paper-GARF" alt="Paper PDF">
     </a>
     <a href="https://arxiv.org/abs/2503.11651"><img src="https://img.shields.io/badge/arXiv-2503.11651-b31b1b" alt="arXiv"></a>
     <a href="https://ai4ce.github.io/GARF"><img src="https://img.shields.io/badge/Project_Page-green" alt="Project Page"></a>
@@ -53,19 +53,26 @@
 
 
 ## 🔊 News 
-- `2025/03/25`: We release the [GARF](https://huggingface.co/collections/IPEC-COMMUNITY/foundation-vision-language-action-model-6795eb96a9c661f90236acbb), which achieves state-of-the-art performance across a diverse range of synthetic and real-world benchmarks. Try our [demo](https://garf-demo.pages.dev/) on your own data! 
+- `2025/03/25`: We release the [GARF](https://github.com/ai4ce/GARF), which achieves state-of-the-art performance across a diverse range of synthetic and real-world benchmarks. Try our [demo](https://garf-demo.pages.dev/) on your own data! 
 
 ## 📖 Table of Contents
 
-- [📄 Document](#Document)
-- [😺 Model Zoo](#data-preparation)
-- [✅ Evaluation Performance](#Performance)
-- [🙋 FAQs](#faq)
+- [📄 Documentation](#-documentation)
+  - [⏩ Installation](#-installation)
+  - [💾 Data Preparation](#-data-preparation)
+  - [🎯 Evaluation](#-evaluation)
+  - [🎮 Training](#-training)
+  - [📂 Project Structure and Config System](#-project-structure-and-config-system)
+  - [🎮 Visualization](#-visualization)
+- [😺 Model Zoo](#-model-zoo)
+- [✅ Evaluation Performance](#-evaluation-performance)
+- [🙋 FAQs](#-faqs)
 - [Citation](#citation)
 - [License](#license)
+- [Acknowledgement](#acknowledgement)
 
 
-## 📄 Document
+## 📄 Documentation
 
 
 ### ⏩ **Installation**
@@ -77,10 +84,10 @@ source ./venv/bin/activate
 ```
 to install the dependencies and activate the virtual environment. Please be noted that `flash-attn` requires CUDA 12.0 or above and `pytorch3d` may need GPU available when installing it, or it will compile with no GPU support.
 
-If you encountering any issue, you may try to re-install after removing the virtual environment at `.venv` and doing `uv clean` to remove the cache.
+If you encounter any issue, you may try to re-install after removing the virtual environment at `.venv` and doing `uv clean` to remove the cache.
 
 ### 💾 **Data Preparation**
-We will soon provide the script to process the raw Breaking Bad dataset into our hdf5 format, right now, you can directly download our processed dataset from following links. Fractuna dataset will be released soon.
+We will soon provide the script to process the raw Breaking Bad dataset into our hdf5 format, right now, you can directly download our processed dataset from following links. Fractura dataset will be released soon.
 <table>
   <tr>
     <th>Dataset</th>
@@ -199,7 +206,7 @@ python train.py \
 ├── train.py             # Training script
 ├── vis.py               # Visualization script
 ```
-All the configuration files are stored in the `configs` folder. The config system is based on [Hydra](https://hydra.cc/docs/intro/), which allows you to easily modify the configurations by changing the YAML files. You can also override the configurations by passing command line arguments when running the script. We hugely utilize the config system for the initialization of all the modules. You could refer to `configs/models` to see the configuration files for different models. The `configs/experiments` folder serves as a global overide configuration for the training and evaluation scripts.
+All the configuration files are stored in the `configs` folder. The config system is based on [Hydra](https://hydra.cc/docs/intro/), which allows you to easily modify the configurations by changing the YAML files. You can also override the configurations by passing command line arguments when running the script. We hugely utilize the config system for the initialization of all the modules. You could refer to `configs/models` to see the configuration files for different models. The `configs/experiments` folder serves as a global override configuration for the training and evaluation scripts.
 
 ### 🎮 **Visualization**
 After running the evaluation, per sample transformations will be saved in `logs/GARF/{EXPERIMENT_NAME}/json_results/`. Using the transformation saved in the json, you can firstly apply the inverse of gt transformation to the fragments to get the model input, and then apply the model output transformations to the fragments to get the the final output. We'll soon provide a script and sample to visualize the results.
@@ -253,6 +260,8 @@ If you find this project useful, please consider citing our paper:
  journal={arXiv preprint arXiv:2412.00138},
 }
 ```
+
+Our codebase and method implementation are based on the excellent work by [PuzzleFusion++](https://github.com/eric-zqwang/puzzlefusion-plusplus) and [PointTransformerV3](https://github.com/Pointcept/PointTransformerV3), which provided valuable foundations and insights.
 
 ## License
 This project is licensed under the GPL License. See the [LICENSE](LICENSE) file for details.
