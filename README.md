@@ -10,7 +10,7 @@
     <a href="https://ai4ce.github.io/GARF/static/GARF.pdf" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Paper-GARF" alt="Paper PDF">
     </a>
-    <a href="https://arxiv.org/abs/2503.11651"><img src="https://img.shields.io/badge/arXiv-2503.11651-b31b1b" alt="arXiv"></a>
+    <a href="https://arxiv.org/abs/2504.05400"><img src="https://img.shields.io/badge/arXiv-2504.05400-b31b1b" alt="arXiv"></a>
     <a href="https://ai4ce.github.io/GARF"><img src="https://img.shields.io/badge/Project_Page-green" alt="Project Page"></a>
     <a href='https://garf-demo.pages.dev'><img alt="Static Badge" src="https://img.shields.io/badge/GARF-demo-demo?color=%23fa8c16">
 </a>
@@ -53,7 +53,7 @@
 
 
 ## 🔊 News 
-- `2025/03/25`: We release the [GARF](https://github.com/ai4ce/GARF), which achieves state-of-the-art performance across a diverse range of synthetic and real-world benchmarks. Try our [demo](https://garf-demo.pages.dev/) on your own data! 
+- `2025/03/25`: We release the <a href="https://ai4ce.github.io/GARF/" target="_blank">GARF</a>, which achieves state-of-the-art performance across a diverse range of synthetic and real-world benchmarks. Try our <a href="https://garf-demo.pages.dev/">demo</a> on your own data! 
 
 ## 📖 Table of Contents
 
@@ -257,7 +257,7 @@ If you find this project useful, please consider citing our paper:
  title={GARF: Learning Generalizable 3D Reassembly for Real-World Fractures},
  author={Sihang Li and Zeyu Jiang and Grace Chen and Chenyang Xu and Siqi Tan and Xue Wang and Irving Fang and Kristof Zyskowski and Shannon McPherron and Radu Iovita and Chen Feng and Jing Zhang},
  year={2025},
- journal={arXiv preprint arXiv:2412.00138},
+ journal={arXiv preprint arXiv:2504.05400},
 }
 ```
 
