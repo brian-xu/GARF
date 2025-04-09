@@ -10,9 +10,9 @@
     <a href="https://ai4ce.github.io/GARF/static/GARF.pdf" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Paper-GARF" alt="Paper PDF">
     </a>
-    <a href="https://arxiv.org/abs/2504.05400"><img src="https://img.shields.io/badge/arXiv-2504.05400-b31b1b" alt="arXiv"></a>
-    <a href="https://ai4ce.github.io/GARF"><img src="https://img.shields.io/badge/Project_Page-green" alt="Project Page"></a>
-    <a href='https://garf-demo.pages.dev'><img alt="Static Badge" src="https://img.shields.io/badge/GARF-demo-demo?color=%23fa8c16">
+    <a href="https://arxiv.org/abs/2504.05400" target="_blank"><img src="https://img.shields.io/badge/arXiv-2504.05400-b31b1b" alt="arXiv"></a>
+    <a href="https://ai4ce.github.io/GARF" target="_blank"><img src="https://img.shields.io/badge/Project_Page-green" alt="Project Page"></a>
+    <a href='https://garf-demo.pages.dev' target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/GARF-demo-demo?color=%23fa8c16">
 </a>
   </p>
   <p align="center">
@@ -53,7 +53,7 @@
 
 
 ## 🔊 News 
-- `2025/03/25`: We release the <a href="https://ai4ce.github.io/GARF/" target="_blank">GARF</a>, which achieves state-of-the-art performance across a diverse range of synthetic and real-world benchmarks. Try our <a href="https://garf-demo.pages.dev/">demo</a> on your own data! 
+- `2025/03/25`: We release the <a href="https://ai4ce.github.io/GARF/" target="_blank">GARF</a>, which achieves state-of-the-art performance across a diverse range of synthetic and real-world benchmarks. Try our <a href="https://garf-demo.pages.dev/" target="_blank">demo</a> on your own data! 
 
 ## 📖 Table of Contents
 
