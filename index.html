@@ -45,11 +45,15 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NB21ZH04R"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-3NB21ZH04R');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-3NB21ZH04R');
 </script>
 
 <body>
@@ -142,7 +146,6 @@
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=JqLHsvYAAAAJ&hl=en"
                  target="_blank">Radu Iovita<sup>1</sup></a>,</span>
-            </span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=YeG8ZM0AAAAJ"
                  target="_blank">Chen Feng<sup>1✉</sup></a>,
@@ -214,16 +217,16 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https:"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>FRACTURA Dataset (Coming Soon)</span>
-                </a>
-              </span>
+              <a href="https:" target="_blank"
+                 class="external-link button is-normal is-rounded is-dark"
+                 style="white-space: normal; text-align: center;">
+                <span class="icon">
+                    <i class="far fa-images"></i>
+                </span>
+                <span style="white-space: normal; line-height: 1.1;">FRACTURA Dataset (Coming Soon)</span>
+              </a>
+            </span>
             </div>
-
           </div>
         </div>
       </div>
@@ -301,13 +304,14 @@
             <source src="static/videos/fractura/vase2.mp4" type="video/mp4">
           </video>
         </div>
-      
+
         <!-- 模型行 -->
         <div class="column is-one-fifth is-hidden-mobile">
           <model-viewer src="static/models/fractura/bowl.glb" camera-controls interaction-prompt="none" auto-rotate
                         shadow-intensity="1" exposure="0.7"
                         style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
-            <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+            <div
+                style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
               Bowl
             </div>
           </model-viewer>
@@ -316,7 +320,8 @@
           <model-viewer src="static/models/fractura/plate.glb" camera-controls interaction-prompt="none" auto-rotate
                         shadow-intensity="1" exposure="0.7"
                         style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
-            <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+            <div
+                style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
               Plate
             </div>
           </model-viewer>
@@ -325,7 +330,8 @@
           <model-viewer src="static/models/fractura/pot.glb" camera-controls interaction-prompt="none" auto-rotate
                         shadow-intensity="1" exposure="0.7"
                         style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
-            <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+            <div
+                style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
               Pot
             </div>
           </model-viewer>
@@ -334,7 +340,8 @@
           <model-viewer src="static/models/fractura/vase1.glb" camera-controls interaction-prompt="none" auto-rotate
                         shadow-intensity="1" exposure="0.7"
                         style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
-            <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+            <div
+                style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
               Vase
             </div>
           </model-viewer>
@@ -343,12 +350,13 @@
           <model-viewer src="static/models/fractura/vase2.glb" camera-controls interaction-prompt="none" auto-rotate
                         shadow-intensity="1" exposure="0.7"
                         style="width: 100%; height: 200px; background-color: #f7f7f7; border-radius: 8px; position: relative;">
-            <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+            <div
+                style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
               Vase
             </div>
           </model-viewer>
         </div>
-      
+
         <!-- 手机端：五行，每行左侧视频，右侧模型 -->
         <!-- 手机端内容 -->
         <div class="column is-full is-hidden-tablet">
@@ -363,14 +371,15 @@
               <model-viewer src="static/models/fractura/bowl.glb" camera-controls interaction-prompt="none" auto-rotate
                             shadow-intensity="1" exposure="0.7"
                             style="width: 100%; height: calc(100% - 0.375rem); background-color: #f7f7f7; border-radius: 8px; position: relative;">
-                <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+                <div
+                    style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
                   Bowl
                 </div>
               </model-viewer>
             </div>
           </div>
         </div>
-      
+
         <div class="column is-full is-hidden-tablet">
           <div class="columns is-mobile">
             <!-- 第二个物品 -->
@@ -383,14 +392,15 @@
               <model-viewer src="static/models/fractura/plate.glb" camera-controls interaction-prompt="none" auto-rotate
                             shadow-intensity="1" exposure="0.7"
                             style="width: 100%; height: calc(100% - 0.375rem); background-color: #f7f7f7; border-radius: 8px; position: relative;">
-                <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+                <div
+                    style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
                   Plate
                 </div>
               </model-viewer>
             </div>
           </div>
         </div>
-      
+
         <div class="column is-full is-hidden-tablet">
           <div class="columns is-mobile">
             <!-- 第三个物品 -->
@@ -403,14 +413,15 @@
               <model-viewer src="static/models/fractura/pot.glb" camera-controls interaction-prompt="none" auto-rotate
                             shadow-intensity="1" exposure="0.7"
                             style="width: 100%; height: calc(100% - 0.375rem); background-color: #f7f7f7; border-radius: 8px; position: relative;">
-                <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+                <div
+                    style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
                   Pot
                 </div>
               </model-viewer>
             </div>
           </div>
         </div>
-      
+
         <div class="column is-full is-hidden-tablet">
           <div class="columns is-mobile">
             <!-- 第四个物品 -->
@@ -423,14 +434,15 @@
               <model-viewer src="static/models/fractura/vase1.glb" camera-controls interaction-prompt="none" auto-rotate
                             shadow-intensity="1" exposure="0.7"
                             style="width: 100%; height: calc(100% - 0.375rem); background-color: #f7f7f7; border-radius: 8px; position: relative;">
-                <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+                <div
+                    style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
                   Vase
                 </div>
               </model-viewer>
             </div>
           </div>
         </div>
-      
+
         <div class="column is-full is-hidden-tablet">
           <div class="columns is-mobile">
             <!-- 第五个物品 -->
@@ -443,7 +455,8 @@
               <model-viewer src="static/models/fractura/vase2.glb" camera-controls interaction-prompt="none" auto-rotate
                             shadow-intensity="1" exposure="0.7"
                             style="width: 100%; height: 100%; background-color: #f7f7f7; border-radius: 8px; position: relative;">
-                <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+                <div
+                    style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.3); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
                   Vase
                 </div>
               </model-viewer>
@@ -455,8 +468,10 @@
         <div class="notification is-info is-light" style="text-align: justify;">
           <p>
             <strong>Note: All fragments shown above are obtained from real 3D scans. </strong>
-            Even when presented with unfamiliar fragments or missing parts, GARF successfully assembles them and accurately aligns their poses. 
-            Try rotating and zooming in on the 3D models to see how seamlessly the pieces fit together!All the fragments above are obtained from real scans. 
+            Even when presented with unfamiliar fragments or missing parts, GARF successfully assembles them and
+            accurately aligns their poses.
+            Try rotating and zooming in on the 3D models to see how seamlessly the pieces fit together!All the fragments
+            above are obtained from real scans.
           </p>
         </div>
       </div>
@@ -808,7 +823,10 @@
 <section class="section" id="Acknowledgements">
   <div class="container is-max-desktop content">
     <h2 class="title">Acknowledgements</h2>
-    We gratefully acknowledge the Physical Anthropology Unit, Universidad Complutense de Madrid for access to curated human skeletons, and Dr. Scott A. Williams (NYU Anthropology Department) for the processed data samples. This work was supported in part through NSF grants 2152565, 2238968, 2322242, and 2426993, and the NYU IT High Performance Computing resources, services, and staff expertise.
+    We gratefully acknowledge the Physical Anthropology Unit, Universidad Complutense de Madrid for access to curated
+    human skeletons, and Dr. Scott A. Williams (NYU Anthropology Department) for the processed data samples. This work
+    was supported in part through NSF grants 2152565, 2238968, 2322242, and 2426993, and the NYU IT High Performance
+    Computing resources, services, and staff expertise.
   </div>
 </section>
 
