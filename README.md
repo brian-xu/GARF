@@ -1,19 +1,13 @@
-
-
-
 <p align="center">
   <h1 align="center"> <img src="assets/cat.png" alt="Cambrian" width="23" height="auto"> GARF: Learning Generalizable 3D Reassembly </br> for Real-World Fractures </h1>
   <p align="center">
   A generalizable flow matching-based 3D reassembly method trained on 1.9 Million fractures, enabling precise real-world fragment pose alignment. 😊Achieves strong performance across extensive benchmarks, concise code with efficient performance.
   </p>
   <p align="center">
-    <a href="https://ai4ce.github.io/GARF/static/GARF.pdf" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Paper-GARF" alt="Paper PDF">
-    </a>
+    <a href="https://ai4ce.github.io/GARF/static/GARF.pdf" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Paper-GARF" alt="Paper PDF"></a>
     <a href="https://arxiv.org/abs/2504.05400" target="_blank"><img src="https://img.shields.io/badge/arXiv-2504.05400-b31b1b" alt="arXiv"></a>
     <a href="https://ai4ce.github.io/GARF" target="_blank"><img src="https://img.shields.io/badge/Project_Page-green" alt="Project Page"></a>
-    <a href='https://garf-demo.pages.dev' target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/GARF-demo-demo?color=%23fa8c16">
-</a>
+    <a href='https://garf-demo.pages.dev' target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/GARF-demo-demo?color=%23fa8c16"></a>
   </p>
   <p align="center">
     <a href="https://scholar.google.com/citations?user=90IoeJsAAAAJ">Sihang Li*</a>
@@ -22,13 +16,13 @@
     ·
     <a href="https://www.linkedin.com/in/grace-chen-37a974293/">Grace Chen†</a>
     ·
-    <a href="https://uk.linkedin.com/in/chenyang-xu-755125181">Chenyang Xu†</a>
+    <a href="https://www.linkedin.com/in/chenyang-xu-755125181">Chenyang Xu†</a>
     ·
     <a href="https://github.com/kevintsq">Siqi Tan</a>
     ·
     <a href="https://github.com/kevintsq">Xue Wang</a>
     ·
-    <a href="https://irvingf7.github.io/">Irving Fang</a>
+    <a href="https://github.com/irvingf7">Irving Fang</a>
     ·
     <a href="https://scholar.google.com/citations?user=aEmILscAAAAJ&hl=en">Kristof Zyskowski</a>
     ·
@@ -38,7 +32,7 @@
     ·
     <a href="https://scholar.google.com/citations?hl=en&user=YeG8ZM0AAAAJ">Chen Feng✉</a>
     ·
-    <a href="https://jingz6676.github.io/">Jing Zhang✉</a>
+    <a href="https://github.com/jingz6676">Jing Zhang✉</a>
   </p>
   <p align="center">
     *, † Equal contribution ✉ Corresponding author
@@ -48,8 +42,6 @@
 </p>
 
   <div align="center"></div>
-
-</p>
 
 
 ## 🔊 News 
@@ -76,7 +68,7 @@
 
 
 ### ⏩ **Installation**
-We recommend using [uv](https://docs.astral.sh/uv/) to manage the dependencies. Follow the instructions [here](https://docs.astral.sh/uv/installation) to install uv. Then, simply run
+We recommend using [uv](https://docs.astral.sh/uv/) to manage the dependencies. Follow the instructions [here](https://docs.astral.sh/uv/getting-started/installation/) to install uv. Then, simply run
 ```bash
 uv sync
 uv sync --extra post
@@ -156,7 +148,7 @@ python train.py \
     data.data_root=$DATA_ROOT \
     ckpt_path=$CHECKPOINT_PATH # to resume training
 ```
-#### ⭐ **Stage 2: Flow-matching Training**
+#### ⭐ **Stage 2: Flow-Matching Training**
 The difference here is that we will use the pretrained feature extractor to initialize the model, and we have to change the experiment into our flow-matching training.
 ```bash
 NUM_NODES=4
@@ -173,7 +165,7 @@ python train.py \
     model.feature_extractor_ckpt=$FEATURE_EXTRACTOR_CKPT \
     ckpt_path=$CHECKPOINT_PATH # to resume training
 ```
-#### ⭐ **(Optional) Stage 3: LoRA-based Fine-tuning**
+#### ⭐ **(Optional) Stage 3: LoRA-Based Fine-Tuning**
 To start fine-tuning, the very first thing you need to do is to prepare your own dataset. The dataset should be in the same format as the Breaking Bad dataset, and you can use our provided script to convert it into hdf5 format. Then, you can run the following example script to start fine-tuning.
 ```bash
 python train.py \
@@ -195,16 +187,17 @@ python train.py \
 ## 📂 Project Structure and Config System
 
 ```bash
+.
 ├── assembly
 │   ├── backbones        # Backbones used for feature extraction
 │   ├── data             # Data processing module
-│   ├── models
-│   │   ├── denoiser     # Denoising models
-│   │   ├── pretraining  # Pretraining module
+│   └── models
+│       ├── denoiser     # Denoising models
+│       └── pretraining  # Pretraining module
 ├── configs              # Configuration files directory
 ├── eval.py              # Evaluation script
 ├── train.py             # Training script
-├── vis.py               # Visualization script
+└── vis.py               # Visualization script
 ```
 All the configuration files are stored in the `configs` folder. The config system is based on [Hydra](https://hydra.cc/docs/intro/), which allows you to easily modify the configurations by changing the YAML files. You can also override the configurations by passing command line arguments when running the script. We hugely utilize the config system for the initialization of all the modules. You could refer to `configs/models` to see the configuration files for different models. The `configs/experiments` folder serves as a global override configuration for the training and evaluation scripts.
 
@@ -269,12 +262,11 @@ This project is licensed under the GPL License. See the [LICENSE](LICENSE) file 
 ## Acknowledgement
  We gratefully acknowledge the Physical Anthropology Unit, Universidad Complutense de Madrid for providing access to the human skeletons under their curation. This work was supported in part through NSF grants 2152565, 2238968, 2322242, and 2426993, and the NYU IT High Performance Computing resources, services, and staff expertise. 
 
-
-  <!-- ```bibtex
-    @inproceedings{li2025garf,
-    title={VGGT: Visual Geometry Grounded Transformer},
-    author={Wang, Jianyuan and Chen, Minghao and Karaev, Nikita and Vedaldi, Andrea and Rupprecht, Christian and Novotny, David},
-    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-    year={2025}
-    }
-``` -->
+```bibtex
+@article{li2025garf,
+ title={GARF: Learning Generalizable 3D Reassembly for Real-World Fractures},
+ author={Li, Sihang and Jiang, Zeyu and Chen, Grace and Xu, Chenyang and Tan, Siqi and Wang, Xue and Fang, Irving and Zyskowski, Kristof and McPherron, Shannon P and Iovita, Radu and Feng, Chen and Zhang, Jing},
+ year={2025},
+ journal={arXiv preprint arXiv:2504.05400},
+}
+```
