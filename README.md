@@ -1,6 +1,13 @@
 <p align="center">
   <h1 align="center"> <img src="assets/cat.png" alt="Cambrian" width="23" height="auto"> GARF: Learning Generalizable 3D Reassembly </br> for Real-World Fractures </h1>
   <p align="center">
+    <video width="100%" autoplay loop muted>
+      <source src="assets/GARF.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </p>
+
+  <p align="center">
   A generalizable flow matching-based 3D reassembly method trained on 1.9 Million fractures, enabling precise real-world fragment pose alignment. 😊Achieves strong performance across extensive benchmarks, concise code with efficient performance.
   </p>
   <p align="center">
