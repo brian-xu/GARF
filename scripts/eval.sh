@@ -1,5 +1,5 @@
 EXPERIMENT_NAME="everyday_vol_one_step_init"
-DATA_ROOT="../breaking_bad_vol.hdf5"
+DATA_ROOT="breaking_bad_vol.hdf5"
 DATA_CATEGORIES="['everyday']"
 CHECKPOINT_PATH="output/GARF.ckpt"
 

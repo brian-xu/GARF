@@ -2,8 +2,8 @@ from typing import List
 
 import hydra
 import lightning as L
-from lightning.pytorch.loggers import Logger
 from lightning.pytorch.callbacks import Timer
+from lightning.pytorch.loggers import Logger
 from omegaconf import DictConfig, OmegaConf
 
 OmegaConf.register_new_resolver("getIndex", lambda lst, idx: lst[idx])

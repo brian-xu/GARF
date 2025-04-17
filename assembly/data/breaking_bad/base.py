@@ -1,9 +1,9 @@
-from typing import Literal, List
-
-import trimesh
 import logging
+from typing import List, Literal
+
 import h5py
 import numpy as np
+import trimesh
 from torch.utils.data import Dataset
 
 COLORS = [
@@ -78,7 +78,7 @@ class BreakingBadBase(Dataset):
         filtered_data_list = []
         for item in data_list:
             try:
-                num_parts = len(h5_file[item]["pieces"].keys())
+                num_parts = len(h5_file[item].keys())
                 # Here's the limit
                 # For removal, we need to ensure that, after removal, number of parts should still greater than min_parts
                 # For redundancy, we need to ensure that,
@@ -99,12 +99,12 @@ class BreakingBadBase(Dataset):
 
     def get_meshes(self, name: str) -> List[trimesh.Trimesh]:
         h5_file = h5py.File(self.data_root, "r")
-        pieces = h5_file[name]["pieces"].keys()
+        pieces = h5_file[name].keys()
 
         meshes = [
             {
-                "vertices": np.array(h5_file[name]["pieces"][piece]["vertices"][:]),
-                "faces": np.array(h5_file[name]["pieces"][piece]["faces"][:]),
+                "vertices": np.array(h5_file[name][piece]["vertices"][:]),
+                "faces": np.array(h5_file[name][piece]["faces"][:]),
                 "color": self.COLORS[idx % len(self.COLORS)],
             }
             for idx, piece in enumerate(pieces)
@@ -116,14 +116,13 @@ class BreakingBadBase(Dataset):
         name = self.data_list[index]
 
         h5_file = h5py.File(self.data_root, "r")
-        pieces = h5_file[name]["pieces"].keys()
-        pieces_names = h5_file[name]["pieces_names"][:]
-        pieces_names = [name.decode("utf-8") for name in pieces_names]
+        pieces = h5_file[name].keys()
+        pieces_names = [piece for piece in pieces]
         num_parts = len(pieces)
         meshes = [
             trimesh.Trimesh(
-                vertices=np.array(h5_file[name]["pieces"][piece]["vertices"][:]),
-                faces=np.array(h5_file[name]["pieces"][piece]["faces"][:]),
+                vertices=np.array(h5_file[name][piece]["vertices"][:]),
+                faces=np.array(h5_file[name][piece]["faces"][:]),
             )
             for piece in pieces
         ]
@@ -135,8 +134,8 @@ class BreakingBadBase(Dataset):
 
         shared_faces = [
             (
-                np.array(h5_file[name]["pieces"][piece]["shared_faces"][:])
-                if "shared_faces" in h5_file[name]["pieces"][piece]
+                np.array(h5_file[name][piece]["shared_faces"][:])
+                if "shared_faces" in h5_file[name][piece]
                 else -np.ones(len(meshes[idx].faces), dtype=np.int64)
             )
             for idx, piece in enumerate(pieces)
@@ -270,8 +269,9 @@ class BreakingBadBase(Dataset):
 
     def export_hdf5(self, output_path: str):
         # Using dataloder for easy multi-processing
-        from tqdm import tqdm
         from concurrent.futures import ProcessPoolExecutor
+
+        from tqdm import tqdm
 
         f = h5py.File(output_path, "w")
         # Write Metadata

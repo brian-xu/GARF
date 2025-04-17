@@ -1,7 +1,7 @@
-from typing import Literal, Optional, List, Dict
+from typing import Dict, List, Literal, Optional
 
 import lightning as L
-from torch.utils.data import Dataset, DataLoader, ConcatDataset
+from torch.utils.data import ConcatDataset, DataLoader, Dataset
 
 from . import BreakingBadUniform, BreakingBadWeighted
 
